@@ -1,0 +1,1 @@
+function r(t){if(!t)return"-";const e=new Date(t),n=a=>String(a).padStart(2,"0");return`${e.getFullYear()}-${n(e.getMonth()+1)}-${n(e.getDate())}`}function o(t){if(!t)return"-";const e=new Date(t),n=a=>String(a).padStart(2,"0");return`${r(t)} ${n(e.getHours())}:${n(e.getMinutes())}`}export{o as a,r as f};
