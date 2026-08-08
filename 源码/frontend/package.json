@@ -1,0 +1,30 @@
+{
+  "name": "zawu-locator",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^5.18.0",
+    "browser-image-compression": "^2.0.2",
+    "dexie": "^4.0.8",
+    "pinia": "^2.2.2",
+    "vant": "^4.9.4",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-pwa": "^0.20.0",
+    "vitest": "^3.2.7",
+    "vue-tsc": "^2.0.26"
+  }
+}

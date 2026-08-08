@@ -1,0 +1,38 @@
+import type { ItemStatus, LocationType, SpaceIcon, TagColor } from '@/types'
+
+export const LocationTypeMap: Record<LocationType, { label: string; desc?: string }> = {
+  ROOM: { label: '房间/区域', desc: '如卧室、厨房、储物间' },
+  CABINET: { label: '柜子', desc: '如衣柜、储物柜' },
+  DRAWER: { label: '抽屉', desc: '如书桌抽屉' },
+  SHELF: { label: '隔层/架子', desc: '如书架隔层' },
+  BOX: { label: '箱子', desc: '如纸箱、收纳箱' },
+  BAG: { label: '包/袋', desc: '如大包套小包中的包' },
+  BIN: { label: '收纳盒', desc: '如塑料收纳盒' },
+  OTHER: { label: '其他', desc: '未列出的收纳位置' }
+}
+
+export const ItemStatusMap: Record<ItemStatus, { label: string; desc?: string }> = {
+  IN_STOCK: { label: '在库', desc: '物品存放于登记位置' },
+  BORROWED: { label: '借出', desc: '已借出/取出使用' },
+  DISCARDED: { label: '已丢弃', desc: '已丢弃/报废，可恢复' }
+}
+
+export const SpaceIconMap: Record<SpaceIcon, { label: string }> = {
+  HOME: { label: '客厅/家' },
+  BEDROOM: { label: '卧室' },
+  KITCHEN: { label: '厨房' },
+  BATHROOM: { label: '卫生间' },
+  STUDY: { label: '书房' },
+  STORAGE: { label: '储物间' },
+  OTHER: { label: '其他' }
+}
+
+export const TagColorMap: Record<TagColor, { label: string; hex: string }> = {
+  RED: { label: '红', hex: '#c24b3d' },
+  ORANGE: { label: '橙', hex: '#e0812d' },
+  YELLOW: { label: '黄', hex: '#d9a93a' },
+  GREEN: { label: '绿', hex: '#4d7c5f' },
+  BLUE: { label: '蓝', hex: '#4a6fa5' },
+  PURPLE: { label: '紫', hex: '#7b5e91' },
+  GRAY: { label: '灰', hex: '#8a8374' }
+}
